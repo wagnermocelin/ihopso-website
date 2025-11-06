@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - I HOP SO</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body class="admin-page">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>I HOP SO</h2>
+            <p>Admin Panel</p>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#dashboard" class="nav-item active" data-section="dashboard">
+                <span class="icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="#contacts" class="nav-item" data-section="contacts">
+                <span class="icon">📧</span>
+                <span>Contatos</span>
+            </a>
+            <a href="#newsletter" class="nav-item" data-section="newsletter">
+                <span class="icon">📬</span>
+                <span>Newsletter</span>
+            </a>
+            <a href="#events" class="nav-item" data-section="events">
+                <span class="icon">🎵</span>
+                <span>Eventos</span>
+            </a>
+            <a href="#menu" class="nav-item" data-section="menu">
+                <span class="icon">🍺</span>
+                <span>Cardápio</span>
+            </a>
+            <a href="#analytics" class="nav-item" data-section="analytics">
+                <span class="icon">📈</span>
+                <span>Estatísticas</span>
+            </a>
+            <a href="#settings" class="nav-item" data-section="settings">
+                <span class="icon">⚙️</span>
+                <span>Configurações</span>
+            </a>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <button id="logoutBtn" class="btn-logout">
+                <span class="icon">🚪</span>
+                <span>Sair</span>
+            </button>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="header-left">
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <h1 id="pageTitle">Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <span class="user-name">Admin</span>
+                    <span class="user-avatar">👤</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Dashboard Section -->
+        <section id="dashboard-section" class="content-section active">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📧</div>
+                    <div class="stat-info">
+                        <h3>Mensagens</h3>
+                        <p class="stat-number" id="totalContacts">0</p>
+                        <span class="stat-label">Total recebidas</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">📬</div>
+                    <div class="stat-info">
+                        <h3>Newsletter</h3>
+                        <p class="stat-number" id="totalNewsletter">0</p>
+                        <span class="stat-label">Inscritos</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3>Visitantes</h3>
+                        <p class="stat-number" id="totalVisitors">0</p>
+                        <span class="stat-label">Total de visitas</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🎵</div>
+                    <div class="stat-info">
+                        <h3>Eventos</h3>
+                        <p class="stat-number" id="totalEvents">3</p>
+                        <span class="stat-label">Próximos eventos</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h3>Mensagens Recentes</h3>
+                    <div id="recentContacts" class="recent-list">
+                        <p class="empty-state">Nenhuma mensagem ainda</p>
+                    </div>
+                </div>
+                
+                <div class="dashboard-card">
+                    <h3>Atividade Recente</h3>
+                    <div id="recentActivity" class="activity-list">
+                        <div class="activity-item">
+                            <span class="activity-icon">🌐</span>
+                            <div class="activity-info">
+                                <p>Site acessado</p>
+                                <small>Há poucos minutos</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contacts Section -->
+        <section id="contacts-section" class="content-section">
+            <div class="section-header">
+                <h2>Mensagens de Contato</h2>
+                <div class="section-actions">
+                    <button class="btn-action" id="clearContacts">🗑️ Limpar Tudo</button>
+                    <button class="btn-action" id="exportContacts">📥 Exportar</button>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                            <th>Mensagem</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contactsTableBody">
+                        <tr>
+                            <td colspan="6" class="empty-state">Nenhuma mensagem recebida ainda</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section id="newsletter-section" class="content-section">
+            <div class="section-header">
+                <h2>Inscritos na Newsletter</h2>
+                <div class="section-actions">
+                    <button class="btn-action" id="clearNewsletter">🗑️ Limpar Tudo</button>
+                    <button class="btn-action" id="exportNewsletter">📥 Exportar</button>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Data de Inscrição</th>
+                            <th>E-mail</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="newsletterTableBody">
+                        <tr>
+                            <td colspan="4" class="empty-state">Nenhum inscrito ainda</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Events Section -->
+        <section id="events-section" class="content-section">
+            <div class="section-header">
+                <h2>Gerenciar Eventos</h2>
+                <button class="btn-primary" id="addEventBtn">➕ Adicionar Evento</button>
+            </div>
+            
+            <div class="events-grid" id="eventsGrid">
+                <div class="event-admin-card">
+                    <h3>Banda Rock Cover</h3>
+                    <p><strong>Data:</strong> 15/12/2024</p>
+                    <p><strong>Horário:</strong> 21h00</p>
+                    <p>Show ao vivo com os maiores sucessos do rock</p>
+                    <div class="card-actions">
+                        <button class="btn-edit">✏️ Editar</button>
+                        <button class="btn-delete">🗑️ Excluir</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Menu Section -->
+        <section id="menu-section" class="content-section">
+            <div class="section-header">
+                <h2>Gerenciar Cardápio</h2>
+                <button class="btn-primary" id="addMenuItemBtn">➕ Adicionar Item</button>
+            </div>
+            
+            <div class="menu-tabs-admin">
+                <button class="tab-btn-admin active" data-category="beers">Cervejas</button>
+                <button class="tab-btn-admin" data-category="drinks">Drinks</button>
+                <button class="tab-btn-admin" data-category="pizzas">Pizzas</button>
+                <button class="tab-btn-admin" data-category="porcoes">Porções</button>
+            </div>
+            
+            <div class="menu-items-grid" id="menuItemsGrid">
+                <p class="empty-state">Carregando itens do cardápio...</p>
+            </div>
+        </section>
+        
+        <!-- Analytics Section -->
+        <section id="analytics-section" class="content-section">
+            <div class="section-header">
+                <h2>Estatísticas e Análises</h2>
+            </div>
+            
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <h3>Visitas por Dia</h3>
+                    <div class="chart-placeholder">
+                        <p>📊 Gráfico de visitas</p>
+                        <p class="chart-info">Últimos 7 dias</p>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <h3>Páginas Mais Visitadas</h3>
+                    <div class="list-stats">
+                        <div class="stat-item">
+                            <span>Home</span>
+                            <strong>45%</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>Cardápio</span>
+                            <strong>30%</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>Eventos</span>
+                            <strong>15%</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>Contato</span>
+                            <strong>10%</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <h3>Dispositivos</h3>
+                    <div class="list-stats">
+                        <div class="stat-item">
+                            <span>📱 Mobile</span>
+                            <strong>60%</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>💻 Desktop</span>
+                            <strong>35%</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>📱 Tablet</span>
+                            <strong>5%</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <h3>Horários de Pico</h3>
+                    <div class="list-stats">
+                        <div class="stat-item">
+                            <span>18h - 20h</span>
+                            <strong>35%</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>20h - 22h</span>
+                            <strong>40%</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>22h - 00h</span>
+                            <strong>25%</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Settings Section -->
+        <section id="settings-section" class="content-section">
+            <div class="section-header">
+                <h2>Configurações</h2>
+            </div>
+            
+            <div class="settings-grid">
+                <div class="settings-card">
+                    <h3>Alterar Senha</h3>
+                    <form id="changePasswordForm">
+                        <div class="form-group">
+                            <label>Senha Atual</label>
+                            <input type="password" id="currentPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Nova Senha</label>
+                            <input type="password" id="newPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirmar Nova Senha</label>
+                            <input type="password" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Alterar Senha</button>
+                    </form>
+                </div>
+                
+                <div class="settings-card">
+                    <h3>Informações do Site</h3>
+                    <form id="siteInfoForm">
+                        <div class="form-group">
+                            <label>Nome do Pub</label>
+                            <input type="text" value="I HOP SO" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input type="tel" value="(11) 99999-9999" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" value="contato@ihopso.com.br" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Endereço</label>
+                            <textarea rows="3">Rua Exemplo, 123 - Centro</textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Salvar Alterações</button>
+                    </form>
+                </div>
+                
+                <div class="settings-card">
+                    <h3>Backup de Dados</h3>
+                    <p>Faça backup de todos os dados do sistema</p>
+                    <button class="btn-action" id="backupBtn">💾 Fazer Backup</button>
+                    <hr>
+                    <p>Restaurar dados de um backup</p>
+                    <input type="file" id="restoreFile" accept=".json" style="display: none;">
+                    <button class="btn-action" id="restoreBtn">📂 Restaurar Backup</button>
+                </div>
+                
+                <div class="settings-card">
+                    <h3>Zona de Perigo</h3>
+                    <p>⚠️ Ações irreversíveis</p>
+                    <button class="btn-danger" id="clearAllDataBtn">🗑️ Limpar Todos os Dados</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="admin-content.js"></script>
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>

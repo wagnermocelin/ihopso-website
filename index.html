@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>I HOP SO - Pub & Bar | Cerveja Artesanal e Drinks Especiais</title>
+    <meta name="description" content="I HOP SO é o melhor pub da região! Venha desfrutar de cervejas artesanais, pizzas estilo napolintano, drinks especiais, petiscos deliciosos e música ao vivo em um ambiente acolhedor.">
+    <meta name="keywords" content="pub, bar, cerveja artesanal, drinks, música ao vivo, happy hour, I HOP SO, petiscos, rock, pizzas, napolitana, pizzaria, choperia">
+    <meta name="author" content="I HOP SO Pub">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ihopso.com.br/">
+    <meta property="og:title" content="I HOP SO - Pub & Bar | Cerveja Artesanal e Pizzas Napolitanas">
+    <meta property="og:description" content="O melhor pub da região! Cervejas artesanais, pizzas napolitanas, drinks especiais e música ao vivo.">
+    <meta property="og:image" content="https://www.ihopso.com.br/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ihopso.com.br/">
+    <meta property="twitter:title" content="I HOP SO - Pub & Bar | Cerveja Artesanal e Pizzas Napolitanas">
+    <meta property="twitter:description" content="O melhor pub da região! Cervejas artesanais, pizzas napolitanas, drinks especiais e música ao vivo.">
+    <meta property="twitter:image" content="https://www.ihopso.com.br/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="canonical" href="https://www.ihopso.com.br/">
+    
+    <!-- Fontes Customizadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="fonts.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BarOrPub",
+        "name": "I HOP SO",
+        "image": "https://www.ihopso.com.br/images/logo.jpg",
+        "description": "Pub e bar com cervejas artesanais, pizzas napolitanas, drinks especiais e música ao vivo",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Coronel Dulcidio, 467",
+            "addressLocality": "Ponta Grossa",
+            "addressRegion": "PR",
+            "postalCode": "84010-280",
+            "addressCountry": "BR"
+        },
+        "telephone": "+55-42-99855-0101",
+        "priceRange": "$$",
+        "servesCuisine": "Pizzas Napolitanas e porções deliciosas",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday"],
+                "opens": "18:00",
+                "closes": "00:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday", "Saturday"],
+                "opens": "18:00",
+                "closes": "02:00"
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo2.png" alt="I HOP SO" class="header-logo-img" onerror="this.src='images/logo2.svg'">
+                    <div class="logo-text">
+                        <h1>I HOP SO</h1>
+                        <span class="tagline">Pub & Bar</span>
+                    </div>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#menu" class="nav-link">Cardápio</a></li>
+                    <li><a href="#events" class="nav-link">Eventos</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+                <a href="admin/login.html" class="admin-login-btn" title="Área Administrativa">
+                    <i class="fas fa-lock admin-icon"></i>
+                    <span class="admin-text">Admin</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="images/logo.png" alt="I HOP SO Logo" class="logo-image" onerror="this.src='images/logo.png'">
+            </div>
+            <h2 class="hero-title">Bem-vindo ao I HOP SO</h2>
+            <p class="hero-subtitle">O melhor pub da região com cervejas artesanais, pizzas napolitanas e drinks especiais</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Ver Cardápio</a>
+                <a href="#contact" class="btn btn-secondary">Faça sua Reserva</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre o I HOP SO</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Uma Experiência Única</h3>
+                    <p>O I HOP SO é mais do que um pub, é um ponto de encontro para quem aprecia boa cerveja, pizzas napolitanas, drinks especiais e um ambiente acolhedor. Com uma seleção cuidadosa de cervejas artesanais nacionais e importadas, nosso cardápio oferece opções para todos os gostos.</p>
+                    <p>Nossa equipe está sempre pronta para receber você com um sorriso e proporcionar momentos inesquecíveis. Seja para um happy hour após o trabalho, um encontro com amigos ou para curtir música ao vivo nos fins de semana, o I HOP SO é o lugar perfeito!</p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-beer-mug-empty feature-icon"></i>
+                            <h4>Cervejas Artesanais</h4>
+                            <p>Seleção especial de estilos que vao te deixar sem ar</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-martini-glass-citrus feature-icon"></i>
+                            <h4>Pizzas Napolitanas</h4>
+                            <p>Pizzas de fermentação lenta exclusivas que vao te deixar suspirando</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-martini-glass-citrus feature-icon"></i>
+                            <h4>Drinks Exclusivos</h4>
+                            <p>Coquetéis autorais preparados por bartenders experientes</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-music feature-icon"></i>
+                            <h4>Música ao Vivo</h4>
+                            <p>Shows e apresentações toda sexta e sábado</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to Action - Redes Sociais -->
+                    <div class="social-cta">
+                        <h3>Conecte-se Conosco!</h3>
+                        <p>Fique por dentro das novidades, promoções e eventos especiais</p>
+                        <div class="social-cta-buttons">
+                            <a href="https://www.facebook.com/profile.php?id=100087321584018" target="_blank" rel="noopener noreferrer" class="social-cta-btn facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Curta no Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/ihopsopg" target="_blank" rel="noopener noreferrer" class="social-cta-btn instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Siga no Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nosso Cardápio</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="beers">Cervejas</button>
+                <button class="tab-btn" data-tab="drinks">Drinks</button>
+                <button class="tab-btn" data-tab="pizzas">Pizzas</button>
+                <button class="tab-btn" data-tab="porcoes">Porções</button>
+            </div>
+            
+            <div class="menu-content">
+                <!-- Cervejas -->
+                <div class="tab-content active" id="beers">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <h4>IPA Artesanal</h4>
+                            <p>Cerveja com amargor equilibrado e notas cítricas</p>
+                            <span class="price">R$ 18,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Pilsen Premium</h4>
+                            <p>Cerveja leve e refrescante, perfeita para qualquer ocasião</p>
+                            <span class="price">R$ 15,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Stout Imperial</h4>
+                            <p>Cerveja escura com notas de café e chocolate</p>
+                            <span class="price">R$ 22,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Weiss Alemã</h4>
+                            <p>Cerveja de trigo com sabor suave e refrescante</p>
+                            <span class="price">R$ 16,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Red Ale</h4>
+                            <p>Cerveja avermelhada com equilíbrio entre malte e lúpulo</p>
+                            <span class="price">R$ 17,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Chopp Artesanal</h4>
+                            <p>Chopp gelado direto do barril (500ml)</p>
+                            <span class="price">R$ 12,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="tab-content" id="drinks">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <h4>Caipirinha Especial</h4>
+                            <p>Cachaça premium com frutas frescas</p>
+                            <span class="price">R$ 20,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Mojito Clássico</h4>
+                            <p>Rum, hortelã, limão e açúcar</p>
+                            <span class="price">R$ 22,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Gin Tônica Premium</h4>
+                            <p>Gin importado com tônica e especiarias</p>
+                            <span class="price">R$ 28,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Whisky Sour</h4>
+                            <p>Whisky, limão siciliano e clara de ovo</p>
+                            <span class="price">R$ 25,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Margarita</h4>
+                            <p>Tequila, triple sec e limão</p>
+                            <span class="price">R$ 24,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Old Fashioned</h4>
+                            <p>Bourbon, açúcar e angostura</p>
+                            <span class="price">R$ 26,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Pizzas -->
+                <div class="tab-content" id="pizzas">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <h4>Tábua de Frios</h4>
+                            <p>Seleção de queijos, salames e pães artesanais</p>
+                            <span class="price">R$ 45,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Batata Rústica</h4>
+                            <p>Batatas fritas com casca e molhos especiais</p>
+                            <span class="price">R$ 25,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Chicken Wings</h4>
+                            <p>Asinhas de frango crocantes com molho barbecue</p>
+                            <span class="price">R$ 32,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Nachos Supreme</h4>
+                            <p>Nachos com queijo derretido, guacamole e jalapeños</p>
+                            <span class="price">R$ 28,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Bruschetta</h4>
+                            <p>Pães tostados com tomate, manjericão e azeite</p>
+                            <span class="price">R$ 22,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Onion Rings</h4>
+                            <p>Anéis de cebola empanados e fritos</p>
+                            <span class="price">R$ 18,00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Porções -->
+                <div class="tab-content" id="porcoes">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <h4>Tábua de Frios</h4>
+                            <p>Seleção de queijos, salames e pães artesanais</p>
+                            <span class="price">R$ 45,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Batata Rústica</h4>
+                            <p>Batatas fritas com casca e molhos especiais</p>
+                            <span class="price">R$ 25,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Chicken Wings</h4>
+                            <p>Asinhas de frango crocantes com molho barbecue</p>
+                            <span class="price">R$ 32,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Nachos Supreme</h4>
+                            <p>Nachos com queijo derretido, guacamole e jalapeños</p>
+                            <span class="price">R$ 28,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Bruschetta</h4>
+                            <p>Pães tostados com tomate, manjericão e azeite</p>
+                            <span class="price">R$ 22,00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h4>Onion Rings</h4>
+                            <p>Anéis de cebola empanados e fritos</p>
+                            <span class="price">R$ 18,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Próximos Eventos</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">DEZ</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Banda Rock Cover</h3>
+                        <p>Show ao vivo com os maiores sucessos do rock nacional e internacional</p>
+                        <span class="event-time">⏰ 21h00 - Entrada Gratuita</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">DEZ</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Happy Hour Especial</h3>
+                        <p>Todas as cervejas e drinks com 30% de desconto</p>
+                        <span class="event-time">⏰ 18h00 às 20h00</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">31</span>
+                        <span class="month">DEZ</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Réveillon no I HOP SO</h3>
+                        <p>Celebre a virada do ano com música ao vivo, open bar e muito mais!</p>
+                        <span class="event-time">⏰ 22h00 - Ingressos Limitados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('images/gallery-ambiente.svg'); background-size: cover; background-position: center;">
+                    <div class="gallery-overlay">
+                        <span>Ambiente Interno</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/gallery-bar.svg'); background-size: cover; background-position: center;">
+                    <div class="gallery-overlay">
+                        <span>Bar</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/gallery-externa.svg'); background-size: cover; background-position: center;">
+                    <div class="gallery-overlay">
+                        <span>Área Externa</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/gallery-eventos.svg'); background-size: cover; background-position: center;">
+                    <div class="gallery-overlay">
+                        <span>Eventos</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/gallery-drinks.svg'); background-size: cover; background-position: center;">
+                    <div class="gallery-overlay">
+                        <span>Drinks</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/gallery-cervejas.svg'); background-size: cover; background-position: center;">
+                    <div class="gallery-overlay">
+                        <span>Cervejas</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/gallery-pizzas.svg'); background-size: cover; background-position: center;">
+                    <div class="gallery-overlay">
+                        <span>Pizzas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-location-dot info-icon"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua Coronel Dulcidio, 467<br>Bairro Centro - Ponta Grossa/PR<br>CEP: 86010-280</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone info-icon"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(42) 99855-0101</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope info-icon"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@ihopso.com.br</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock info-icon"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Terça a Sexta: 18h - 00h<br>Sábado: 12h - 00h<br>Domingo e Segunda: Fechado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Seu Telefone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/logo2.png" alt="I HOP SO" class="footer-logo-img" onerror="this.src='images/logo2.svg'">
+                    <h3>I HOP SO</h3>
+                    <p>O melhor pub da região para você curtir com os amigos!</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100087321584018" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ihopsopg" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5542998550101" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#events">Eventos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (42) 99855-0101</li>
+                        <li><i class="fas fa-envelope"></i> contato@ihopso.com.br</li>
+                        <li><i class="fas fa-location-dot"></i> Rua Coronel Dulcidio, 467 - Centro</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Receba nossas novidades e promoções!</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022  I HOP SO Pub & Bar. Todos os direitos reservados.</p>
+                <p>Desenvolvido com lupulo para proporcionar a melhor experiência</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5542998550101?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20I%20HOP%20SO" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chama no WhatsApp"
+       title="Chama no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

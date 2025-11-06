@@ -1,0 +1,81 @@
+/* Fontes Customizadas - I HOP SO */
+
+/* 
+  IMPORTANTE: Para usar as fontes Chivus e Spiritu, você precisa:
+  1. Obter os arquivos de fonte (.woff, .woff2, .ttf)
+  2. Colocá-los na pasta /fonts/
+  3. Descomentar as declarações @font-face abaixo
+*/
+
+/* Fonte Chivus - Para títulos e destaques */
+/*
+@font-face {
+    font-family: 'Chivus';
+    src: url('fonts/Chivus-Regular.woff2') format('woff2'),
+         url('fonts/Chivus-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chivus';
+    src: url('fonts/Chivus-Bold.woff2') format('woff2'),
+         url('fonts/Chivus-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+*/
+
+/* Fonte Spiritu - Para corpo de texto */
+/*
+@font-face {
+    font-family: 'Spiritu';
+    src: url('fonts/Spiritu-Regular.woff2') format('woff2'),
+         url('fonts/Spiritu-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spiritu';
+    src: url('fonts/Spiritu-Medium.woff2') format('woff2'),
+         url('fonts/Spiritu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spiritu';
+    src: url('fonts/Spiritu-Bold.woff2') format('woff2'),
+         url('fonts/Spiritu-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+*/
+
+/* ALTERNATIVA: Usando fontes similares do Google Fonts */
+/* Estas fontes são similares e estão disponíveis gratuitamente */
+
+/* Importar fontes do Google Fonts como alternativa */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Fallback usando fontes similares disponíveis */
+:root {
+    /* Chivus é uma fonte display/decorativa - usando Bebas Neue como similar */
+    --font-display: 'Bebas Neue', 'Impact', 'Arial Black', sans-serif;
+    
+    /* Spiritu é uma fonte sans-serif moderna - usando Montserrat como similar */
+    --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* 
+  QUANDO TIVER AS FONTES ORIGINAIS:
+  Substitua as variáveis acima por:
+  --font-display: 'Chivus', 'Bebas Neue', sans-serif;
+  --font-body: 'Spiritu', 'Montserrat', sans-serif;
+*/

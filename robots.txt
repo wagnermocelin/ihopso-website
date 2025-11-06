@@ -1,0 +1,21 @@
+# robots.txt para I HOP SO Pub & Bar
+# Permite que todos os motores de busca indexem o site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.ihopso.com.br/sitemap.xml
+
+# Bloquear arquivos e diretórios desnecessários (se houver)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Permitir acesso a recursos CSS e JS
+Allow: /styles.css
+Allow: /script.js
+
+# Crawl-delay (opcional, ajuste conforme necessário)
+Crawl-delay: 1

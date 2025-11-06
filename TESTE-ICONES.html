@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Ícones - Font Awesome</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #2a2a2a;
+            border-radius: 10px;
+        }
+        
+        h2 {
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+        
+        .icon-test {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 15px 0;
+            padding: 15px;
+            background: #333;
+            border-radius: 5px;
+        }
+        
+        .icon-test i {
+            font-size: 2rem;
+            color: #d4af37;
+            width: 50px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+            background: #d4af37;
+            color: #1a1a1a;
+            border-color: #e6c45c;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+        }
+        
+        .code {
+            background: #1a1a1a;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            color: #4CAF50;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Teste de Ícones Font Awesome</h1>
+    
+    <div class="test-section">
+        <h2>1. Ícones Individuais</h2>
+        
+        <div class="icon-test">
+            <i class="fab fa-facebook-f"></i>
+            <div>
+                <strong>Facebook</strong>
+                <div class="code">&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;</div>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <i class="fab fa-instagram"></i>
+            <div>
+                <strong>Instagram</strong>
+                <div class="code">&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;</div>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <i class="fab fa-x-twitter"></i>
+            <div>
+                <strong>Twitter/X</strong>
+                <div class="code">&lt;i class="fab fa-x-twitter"&gt;&lt;/i&gt;</div>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+                <strong>WhatsApp</strong>
+                <div class="code">&lt;i class="fab fa-whatsapp"&gt;&lt;/i&gt;</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. Ícones de Contato</h2>
+        
+        <div class="icon-test">
+            <i class="fas fa-phone"></i>
+            <div>
+                <strong>Telefone</strong>
+                <div class="code">&lt;i class="fas fa-phone"&gt;&lt;/i&gt;</div>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <i class="fas fa-envelope"></i>
+            <div>
+                <strong>E-mail</strong>
+                <div class="code">&lt;i class="fas fa-envelope"&gt;&lt;/i&gt;</div>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <i class="fas fa-location-dot"></i>
+            <div>
+                <strong>Localização</strong>
+                <div class="code">&lt;i class="fas fa-location-dot"&gt;&lt;/i&gt;</div>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <i class="fas fa-clock"></i>
+            <div>
+                <strong>Relógio</strong>
+                <div class="code">&lt;i class="fas fa-clock"&gt;&lt;/i&gt;</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. Ícones do Rodapé (Como Aparecem no Site)</h2>
+        
+        <div class="social-links">
+            <a href="#" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="Twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="#" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        
+        <p style="margin-top: 20px; color: #ccc;">
+            ✅ Se você vê os ícones acima, o Font Awesome está funcionando!<br>
+            ✅ Passe o mouse sobre os ícones para ver o efeito hover
+        </p>
+    </div>
+    
+    <div class="test-section">
+        <h2>4. Diagnóstico</h2>
+        
+        <div id="diagnostico"></div>
+    </div>
+    
+    <script>
+        // Verificar se Font Awesome carregou
+        window.addEventListener('load', function() {
+            const diagnostico = document.getElementById('diagnostico');
+            const testIcon = document.querySelector('.fab');
+            
+            if (testIcon) {
+                const computedStyle = window.getComputedStyle(testIcon);
+                const fontFamily = computedStyle.fontFamily;
+                
+                if (fontFamily.includes('Font Awesome')) {
+                    diagnostico.innerHTML = `
+                        <div style="color: #4CAF50; font-size: 1.2rem;">
+                            ✅ <strong>Font Awesome carregado com sucesso!</strong><br>
+                            <small>Font Family: ${fontFamily}</small>
+                        </div>
+                    `;
+                } else {
+                    diagnostico.innerHTML = `
+                        <div style="color: #f44336; font-size: 1.2rem;">
+                            ❌ <strong>Font Awesome NÃO está carregado!</strong><br>
+                            <small>Font Family detectada: ${fontFamily}</small><br>
+                            <small>Verifique sua conexão com a internet ou o link do CDN.</small>
+                        </div>
+                    `;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
