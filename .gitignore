@@ -42,3 +42,12 @@ build/
 *.zip
 *.rar
 *.7z
+
+# Arquivos de teste (não fazer deploy)
+teste-*.html
+TESTE-*.html
+
+# Documentação de desenvolvimento (opcional no deploy)
+*-README.md
+!README.md
+DEPLOY-CHECKLIST.md
