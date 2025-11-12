@@ -314,15 +314,7 @@ animateElements.forEach(el => {
     observer.observe(el);
 });
 
-// Prevenção de comportamento padrão em links sociais (exemplo)
-document.querySelectorAll('.social-links a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const platform = link.getAttribute('title');
-        alert(`Conecte-se conosco no ${platform}! (Link a ser configurado)`);
-        // Em produção, você colocaria os links reais das redes sociais
-    });
-});
+// Links das redes sociais funcionam normalmente - código de prevenção removido
 
 // Galeria - Modal (opcional, implementação básica)
 const galleryItems = document.querySelectorAll('.gallery-item');
